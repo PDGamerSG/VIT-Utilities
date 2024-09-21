@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Frontpagecss.css">
+</head> 
+<body>
+  <nav class="modern-nav">
+    <a href="#home" id="logo" class="floating-logo">VIT UTILITIES</a>
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li>
+        <a href="#home" class="active floating-link">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="floating-link">About</a>
+      </li>
+      <li>
+        <a href="#services" class="floating-link">Search</a>
+      </li>
+      <li>
+        <a href="#features" class="floating-link">Rating</a>
+      </li>
+      <li>
+        <a href="#FAQ" class="floating-link">F.A.Q</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Carousel -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('https://prod.cosm-cdn.io/cosmdotcom/website_images/explore-the-venue-carousel/2024_TheExperience_TheHall_1920x1080.webp');">
+        <div class="carousel-caption text-center">
+          <h1 class="display-2 font-weight-bold text-shadow" style="font-family: 'Playfair Display', serif;">EATERY</h1>
+          <p class="lead font-italic mb-4" style="font-family: 'Merriweather', serif;">"Savor the Flavor: Fresh Delights Await!"</p>
+          <p class="lead font-italic mb-3" style="font-family: 'Merriweather', serif;">"Taste the Love in Every Bite!"</p>
+          <a href="/search" class="btn btn-lg btn-primary btn-animated" style="font-family: 'Montserrat', sans-serif;">Explore Menu</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('https://www.garnerstationery.com/wp-content/uploads/elementor/thumbs/4-1-qffqjdg0lvgskwkmp7ilyul9lktos9j9zhi2ydy3yg.jpg');">
+        <div class="carousel-caption text-center">
+          <h1 class="display-2 font-weight-bold text-shadow" style="font-family: 'Playfair Display', serif;">STATIONERY COLLECTION</h1>
+          <p class="lead font-italic mb-3" style="font-family: 'Merriweather', serif;">"Elevate Your Everyday: Discover Our Exquisite Stationery Collection!"</p>
+          <a href="/search" class="btn btn-lg btn-primary btn-animated" style="font-family: 'Montserrat', sans-serif;">Browse Collection</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('https://vit.ac.in/SGGES-21/assets/vit.jpg');">
+        <div class="carousel-caption text-center">
+          <h1 class="display-2 font-weight-bold text-shadow" style="font-family: 'Playfair Display', serif;">VIT UTILITIES</h1>
+          <p class="lead font-italic mb-3" style="font-family: 'Merriweather', serif;">VIT Quality: Our Never-Ending Policy!</p>
+          <a href="/search" class="btn btn-lg btn-primary btn-animated" style="font-family: 'Montserrat', sans-serif;">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>ABOUT US</h3>
+        <br>
+        <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="company-tab" data-bs-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="aboutTabContent">
+          <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+            <h5>Our Company</h5>
+            <p>We are a leading company in our field, dedicated to delivering quality and excellence.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+            <h5>Our Mission</h5>
+            <p>Our mission is to innovate and provide the best solutions for our customers.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+            <h5>Our Vision</h5>
+            <p>We envision a future where technology enhances everyday life.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE=" alt="About Us Image" class="img-fluid" width="500px" height="500px"/>
+      </div>
+    </div>
+    <!-- Our Services Section -->
+    <div class="container my-5">
+      <h2 class="text-center">Our Services</h2>
+      <p class="text-center mb-5">We provide a wide range of services to meet your needs. Our expertise allows us to deliver quality solutions that exceed expectations. Explore our services below.</p>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-cogs"></i></div>
+            <h4>Service 1</h4>
+            <p>Offer a variety of filters when purchasing items.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Service 2</h4>
+            <p>Offer insights on different products</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-headset"></i></div>
+            <h4>Service 3</h4>
+            <p>Offer round-the-clock customer support</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Service 4 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-laptop"></i></div>
+            <h4>Service 4</h4>
+            <p>Accessible on various devices, including laptops, Macs, and Linux systems</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Service 5</h4>
+            <p>Accessible on mobile phones, iphones</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="service-box">
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>Service 6</h4>
+            <p>Experience peace of mind with our top-tier security measures</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5"></div>
+    <h2 class="text-center">Items List</h2>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="branding-tab" data-bs-toggle="tab" href="#branding" role="tab" aria-controls="branding" aria-selected="false">Food Court Items</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="books-tab" data-bs-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Stationary Items</a>
+      </li>
+    </ul>
+    <!-- Tab Content -->
+    <div class="tab-content mt-3" id="myTabContent">
+      <!-- All Projects -->
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="project-image">
+              <img src="https://www.allrecipes.com/thmb/5SdUVhHTMs-rta5sOblJESXThEE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11691-tomato-and-garlic-pasta-ddmfs-3x4-1-bf607984a23541f4ad936b33b22c9074.jpg" alt="Project 1" class="img-fluid">
+              <div class="overlay">Project 1 Details</div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 position-relative">
+            <div class="project-image">
+              <img src="https://media.istockphoto.com/id/1334115358/photo/cabbage-manchurian.jpg?s=612x612&w=0&k=20&c=lZvW1lWr03mQszDbx4v59IAnxWacQ_Ti275hjj18hcE=" alt="Project 2" class="img-fluid">
+              <div class="overlay">Project 2 Details</div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="project-image">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg" alt="Project 3" class="img-fluid">
+              <div class="overlay">Project 3 Details</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="project-image">
+              <img src="https://isomarsshop.in/cdn/shop/products/610Y9O_rgZL_2048x.jpg?v=1621682307" alt="Project 4" class="img-fluid">
+              <div class="overlay">Project 4 Details</div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 position-relative">
+            <div class="project-image">
+              <img src="https://5.imimg.com/data5/ECOM/Default/2023/6/318452740/UD/TW/HZ/39458590/aesthetic-set-of-2-mini-notebooks-200-pages-spiral-bound-45-x-45-448454.jpg" alt="Project 5" class="img-fluid">
+              <div class="overlay">Project 5 Details</div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="project-image">
+              <img src="https://m.media-amazon.com/images/I/51GTlqEKyjL._AC_UF1000,1000_QL80_.jpg" alt="Project 6" class="img-fluid">
+              <div class="overlay">Project 6 Details</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Branding Projects -->
+      <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+        <!-- Add Branding Project Images Here -->
+      </div>
+      <!-- Books Projects -->
+      <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">
+        <!-- Add Books Project Images Here -->
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="mb-3">Get in Touch</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4 class="mb-3">Our Location</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096727!2d144.9537363153167!3d-37.81720997975103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f3c4b89%3A0x5045675218cee1b0!2sYour%20Business%20Name!5e0!3m2!1sen!2sau!4v1623670531554!5m2!1sen!2sau" 
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Frontpagejs.js"></script>
+</body>
+</html> 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="searchstyle.css">
+  </head>
+  <body>
+    <nav class="modern-nav">
+      <a href="#home" id="logo" class="floating-logo">VIT UTILITIES</a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#home" class="active floating-link">Home</a></li>
+        <li><a href="#about" class="floating-link">About</a></li>
+        <li><a href="#services" class="floating-link">Search</a></li>
+        <li><a href="#features" class="floating-link">Rating</a></li>
+        <li><a href="#FAQ" class="floating-link">F.A.Q</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <h1 class="discover-heading">Discover the best food & drinks in Vellore</h1>
+    </div>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All Items</button>
+        <button class="button-value" onclick="filterProduct('Food')">Food Items</button>
+        <button class="button-value" onclick="filterProduct('Stationary')">Stationary</button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <script src="searchmodule.js"></script>
+  </body>
+</html>
