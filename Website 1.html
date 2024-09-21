@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <!-- Left Side: Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo">
+      </a>
+
+      <!-- Button for collapsing on mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center Part: Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Stationary Items</a></li>
+              <li><a class="dropdown-item" href="#">Food Items</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Side: "Get Started" Button -->
+      <div class="d-flex">
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section with Slider -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('https://prod.cosm-cdn.io/cosmdotcom/website_images/explore-the-venue-carousel/2024_TheExperience_TheHall_1920x1080.webp');">
+        <div class="carousel-caption text-center">
+          <h1>Slide One</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('https://www.garnerstationery.com/wp-content/uploads/elementor/thumbs/4-1-qffqjdg0lvgskwkmp7ilyul9lktos9j9zhi2ydy3yg.jpg');">
+        <div class="carousel-caption text-center">
+          <h1>Slide Two</h1>
+          <p>Quisque aliquet, libero consequat elementum convallis.</p>
+          <p>Nulla vehicula est ut nisi fermentum vehicula.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('https://vit.ac.in/SGGES-21/assets/vit.jpg');">
+        <div class="carousel-caption text-center">
+          <h1>Slide Three</h1>
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>About Us</h1>
+            <br>
+            <br>
+            <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="company-tab" data-bs-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="aboutTabContent">
+              <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                <h5>Our Company</h5>
+                <p>We are a leading company in our field, dedicated to delivering quality and excellence.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+              <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                <h5>Our Mission</h5>
+                <p>Our mission is to innovate and provide the best solutions for our customers.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+              <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                <h5>Our Vision</h5>
+                <p>We envision a future where technology enhances everyday life.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE=" alt="About Us Image" class="img-fluid" width ="500px" height = "500px"/>
+          </div>
+        </div>
+      </div>
+    
+
+ 
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
