@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="rating.css" />
+  </head>
+  <body>
+    <nav class="modern-nav">
+      <a href="#home" id="logo" class="floating-logo">VIT UTILITIES</a>
+      <ul class="nav-links">
+        <li>
+          <a href="Frontpage.html" class="active floating-link">Home</a>
+        </li>
+        <li>
+          <a href="About.html" class="floating-link">About</a>
+        </li>
+        <li>
+          <a href="Search Webpage.html" class="floating-link">Search</a>
+        </li>
+        <li>
+          <a href="rating.html" class="floating-link">Rating</a>
+        </li>
+        <li>
+          <a href="faq.html" class="floating-link">F.A.Q</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <p id="message">Rate Your Experience</p>
+      <div class="container">
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          <span class="number">1</span>
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          <span class="number">2</span>
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          <span class="number">3</span>
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          <span class="number">4</span>
+        </div>
+        <div class="star-container inactive">
+          <i class="fa-regular fa-star"></i>
+          <span class="number">5</span>
+        </div>
+      </div>
+      <button id="submit" disabled>Submit</button>
+      <div id="submit-section" class="hide">
+        <p id="submit-message">Thanks for your feedback</p>
+      </div>
+    </div>
+    <script src="rating.js"></script>
+  </body>
+</html>
